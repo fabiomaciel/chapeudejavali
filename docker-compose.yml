@@ -1,0 +1,23 @@
+web:
+  image: tutum/apache-php
+  environment:
+    MYSQL_HOST: db
+  ports:
+    - "8000:80"
+  links:
+    - db
+  volumes:
+    #- /home/fabio/Public/github/mapos:/app
+    - /home/fabio/Public/github/phpmyadmin/default:/app
+
+db:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: root 
+    MYSQL_DATABASE: rbos
+    MYSQL_USER: rb_secret_user
+    MYSQL_PASSWORD: 123456
+  volumes:
+    - /home/fabio/Public/github/mapos/mysql:/etc/mysql
+  ports:
+    - "3306:3306"
