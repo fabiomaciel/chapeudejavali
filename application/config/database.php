@@ -7,9 +7,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = $_ENV["OPENSHIFT_MYSQL_DB_HOST"]; 
-$db['default']['username'] = 'adminhjs3l3c';
-$db['default']['password'] = 'sgJhU8dSzh8D';
-$db['default']['database'] = 'rbsystem';
+$db['default']['username'] = 'admin3PBNAgw';
+$db['default']['password'] = 'Kkx_bAYibmUT';
+$db['default']['database'] = 'cabecadejavali';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
